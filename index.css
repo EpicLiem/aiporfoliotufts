@@ -1,8 +1,8 @@
-
 body {
-    background-color: #4a7a6e;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4a7a6e, #1e3d59);
+    font-family: 'Open Sans', sans-serif;
     margin: 20px;
+    color: #f0f0f0;
 }
 
 /* **************************** */
@@ -15,7 +15,9 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 75%;
-    background: rgba(74, 122, 110, 0.5);
+    background: rgba(30, 61, 89, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -27,6 +29,7 @@ body {
 .header .name {
     text-align: left;
     font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .header .navbar {
@@ -39,6 +42,12 @@ body {
     text-decoration: none;
     color: white;
     padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header .navbar a:hover {
+    color: #e0a66a;
+    transition: color 0.3s;
 }
 
 /* ************************** */
@@ -59,19 +68,23 @@ body {
 
 .home-content h1 {
     position: relative;
+    font-family: 'Roboto', sans-serif;
     font-size: 56px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1.2;
     background: rgba(74, 122, 110, 0.5);
     padding: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .home-content p {
     position: relative;
+    font-family: 'Lora', serif;
     font-size: 1.5em;
     margin: 20px 0 40px;
     background: rgba(74, 122, 110, 0.5);
     padding: 5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* ************************************* */
@@ -94,14 +107,29 @@ body {
     margin: 5px;
     background-color: #e0a66a;
     text-align: center;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .project-link {
-    color: #4d3a2c;
+    color: #102027;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: #e0a66a;
+    transition: color 0.3s;
 }
 
 .project-title {
-    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .project-desc {
@@ -110,6 +138,8 @@ body {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
 }
 
 .project-img {
